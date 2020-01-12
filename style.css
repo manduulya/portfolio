@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #bababa;
+    text-align: center;
+}
+.self-cartoon-portrait{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    left: 35px;
+}
+.header-section{
+    margin-top: 256px;
+    margin-left: 135px;
+}
+.scroll-down-guide{
+    margin-top: 160px;
+}
+.scroll-down-guide p{
+    transform: rotate(270deg);
+}
+.scroll-down-guide img{
+    width: 60px;
+    transform: rotate(90deg);
+    margin-top: 60px;
+}
+main{
+    text-align: center;
+}
+.about-me-page{
+    width: 100%;
+    margin-top: 20px;
+}
+.about-me-page img{
+    width: 80%;
+}
+.upper-footer{
+    width: 100%;
+    height: 64px;
+    background-color: aquamarine;
+    margin-top: 80px;
+}
+.about-me-text{
+    height: 180px;
+    background-color: cornflowerblue;
+    margin-top: 70px;
+}
+.lower-footer{
+    width: 100%;
+    height: 50px;
+    background-color: cadetblue;
+}
+.nav-for-desktop{
+    display: none;
+}
+@media only screen and (min-width: 450px){
+    .header{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .about-me-text{
+        width: 70%;
+        margin: 70px auto;
+        height: 250px;
+    }
+    .self-cartoon-portrait{
+        position: absolute;
+        top: 130px;
+        left: 205px;
+    }
+    .header-section, .scroll-down-guide, .about-me-page{
+        display: none;
+    }
+    .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+    .nav-for-desktop{
+        display: inline-block;
+        width: 100%;
+        height: 30px;
+        background-color: #ababab;
+    
+    }
+}
