@@ -5,8 +5,9 @@
 body{
     background: #bababa;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
-.self-cartoon-portrait{
+/* .self-cartoon-portrait{
     width: 150px;
     height: 150px;
     background-color: white;
@@ -14,10 +15,13 @@ body{
     position: absolute;
     top: 70px;
     left: 35px;
+} */
+.self-cartoon-portrait img{
+    width: 200px;
+    margin-top: 20px;
 }
 .header-section{
-    margin-top: 256px;
-    margin-left: 135px;
+    margin-top: 20px;
 }
 .scroll-down-guide{
     margin-top: 160px;
@@ -46,11 +50,6 @@ main{
     background-color: aquamarine;
     margin-top: 80px;
 }
-.about-me-text{
-    height: 180px;
-    background-color: cornflowerblue;
-    margin-top: 70px;
-}
 .lower-footer{
     width: 100%;
     height: 50px;
@@ -66,15 +65,23 @@ main{
     }
     .about-me-text{
         width: 70%;
-        margin: 70px auto;
-        height: 250px;
-    }
-    .self-cartoon-portrait{
+        display: flex;
         position: absolute;
-        top: 130px;
-        left: 205px;
+        top: 160px;
+        left: 700px;
     }
-    .header-section, .scroll-down-guide, .about-me-page{
+    /* .self-cartoon-portrait{
+        position: absolute;
+        top: 220px;
+        left: 410px;
+    } */
+    .self-cartoon-portrait img{
+        width: 260px;
+        position: absolute;
+        top: 120px;
+        left: 360px;
+    }
+    .header-section, .scroll-down-guide, .about-me-page, .upper-footer{
         display: none;
     }
     .footer{
@@ -85,10 +92,33 @@ main{
         color: #fff;
     }
     .nav-for-desktop{
-        display: inline-block;
-        width: 100%;
-        height: 30px;
-        background-color: #ababab;
-    
+        position: fixed;
+        top: 50px;
+        right: 50px;
+        display: block;
+    }
+    .nav-for-desktop ul{
+        list-style-type: none;
+        overflow: hidden;
+    }
+    .nav-for-desktop ul li{
+        display: inline;
+        margin-right: 20px;
+    }
+    .nav-for-desktop ul li a{
+        text-decoration: none;
+    }
+    .big-eye{
+        font-family: 'Zilla Slab', serif;
+        font-size: 360px;
+        line-height: 280px;
+    }
+    .big-eye-text{
+        font-family: 'Philosopher', sans-serif;
+        font-size: 24px;
+        text-align: left;
+        padding-top: 40px;
+        padding-left: 40px;
+        line-height: 30px;
     }
 }
