@@ -5,7 +5,7 @@
 }
 .body{
     margin: 0 auto;
-    width: 90%;
+    width: 70%;
     text-align: center;
 }
 .navigation-div{
@@ -33,6 +33,7 @@
 .main-content p{
     margin-top: 35px;
     text-align: start;
+    font-family: 'Philosopher', sans-serif;
 }
 .projects-icons{
     text-align: start;
@@ -46,14 +47,14 @@
     margin-top: 35px;
 }
 .projects-buttons button{
-    width: 113px;
+    width: 100px;
     height: 37px;
     border-radius: 5px;
     background: #007FEB;
     color: #fff;
     border: none;
-    margin-right: 13px;
-    margin-bottom: 70px;
+    margin-right: 10px;
+    margin-bottom: 110px;
 }
 .projects-buttons .bordered-button{
     background: #fff;
@@ -73,5 +74,6 @@
     margin-top: 19px;
 }
 h1{
-    margin-top: 80px;
+    margin-top: 70px;
+    font-family: 'Zilla Slab', serif;
 }

@@ -7,24 +7,33 @@ body{
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
-/* .self-cartoon-portrait{
-    width: 150px;
-    height: 150px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 70px;
-    left: 35px;
-} */
+.navigation-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.navigation div img{
+    width: 20px;
+    transform: rotate(180deg);
+}
+.hamburger-menu span{
+    width: 30px;
+    height: 4px;
+    background: #000;
+    display: block;
+    margin-bottom: 2px;
+    border-radius: 5px;
+}
 .self-cartoon-portrait img{
     width: 200px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .header-section{
     margin-top: 20px;
 }
 .scroll-down-guide{
-    margin-top: 160px;
+    margin-top: 130px;
 }
 .scroll-down-guide p{
     transform: rotate(270deg);
@@ -40,6 +49,7 @@ main{
 .about-me-page{
     width: 100%;
     margin-top: 20px;
+    font-family: 'Philosopher', sans-serif;
 }
 .about-me-page img{
     width: 80%;
@@ -47,16 +57,53 @@ main{
 .upper-footer{
     width: 100%;
     height: 64px;
-    background-color: aquamarine;
+    background-color: #65adeb;
     margin-top: 80px;
+}
+.upper-footer div{
+    padding-top: 18px;
+}
+.upper-footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
 }
 .lower-footer{
     width: 100%;
     height: 50px;
-    background-color: cadetblue;
+    background-color: #007FEB;
+}
+.lower-footer p{
+    padding-top: 15px;
+    font-size: 14px;
+    color: #fff;
 }
 .nav-for-desktop{
     display: none;
+}
+.about-me-text{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+}
+.big-eye{
+    font-family: 'Zilla Slab', serif;
+    font-size: 180px;
+    line-height: 180px;
+    margin-left: 10px;
+    color: #005ead;
+}
+.big-eye-text{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 20px;
+    line-height: 16px;
+}
+li, a, button {
+    cursor: pointer;
 }
 @media only screen and (min-width: 450px){
     .header{
@@ -91,6 +138,9 @@ main{
         text-align: center;
         color: #fff;
     }
+    .lower-footer p {
+        padding-top: 15px;
+    }
     .nav-for-desktop{
         position: fixed;
         top: 50px;
@@ -107,6 +157,7 @@ main{
     }
     .nav-for-desktop ul li a{
         text-decoration: none;
+        color: #005ead;
     }
     .big-eye{
         font-family: 'Zilla Slab', serif;
