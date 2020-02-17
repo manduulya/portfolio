@@ -25,8 +25,8 @@ body{
     border-radius: 5px;
 }
 .self-cartoon-portrait img{
-    width: 200px;
-    margin-top: 40px;
+    width: 60%;
+    margin-top: 20px;
 }
 .header-section{
     margin-top: 20px;
@@ -96,14 +96,39 @@ main{
 .big-eye-text{
     font-size: 14px;
     text-align: left;
-    padding-top: 40px;
     padding-left: 20px;
     line-height: 16px;
+}
+.mobile-about-me-text{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+}
+.mobile-big-eye{
+    font-family: 'Zilla Slab', serif;
+    font-size: 180px;
+    line-height: 180px;
+    margin-left: 10px;
+    color: #005ead;
+}
+.mobile-big-eye-text{
+    font-size: 14px;
+    text-align: left;
+    padding: 30px 0 0 20px;
 }
 li, a, button {
     cursor: pointer;
 }
+.hidden{
+    display: none;
+}
+.new-hidden{
+    display: none;
+}
 @media only screen and (min-width: 420px){
+    .hidden{
+        display: block;
+    }
     .header{
         width: 70%;
         margin: 0 auto;
@@ -115,13 +140,72 @@ li, a, button {
         top: 160px;
         left: 700px;
     }
-    .self-cartoon-portrait img{
-        width: 260px;
+    .div-to-center{
+        width: 100%;
         position: absolute;
-        top: 120px;
-        left: 360px;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
     }
-    .header-section, .scroll-down-guide, .about-me-page, .upper-footer, .navigation{
+    .about-me-toggle-page{
+        text-align: initial;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        width: 60%;
+        line-height: 1.5em;
+    }
+    .about-me-wrapper{
+        padding: 3em;
+        border: 10px solid transparent;
+        border-image: 10 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em,
+                      #58a 0, #58a 3em, transparent 0, transparent 4em);
+    }
+    .about-me-wrapper p{
+        font-style: italic;
+    }
+    .js-close-button{
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        font-size: 3em;
+        border-radius: 50%;
+        border: 2px solid black;
+        /* position: relative; */
+        padding: 8px;
+        
+    }
+    .js-close-button span{
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        transition: 0.5s;
+    }
+    .rotate{
+        -webkit-transform: rotate(450deg);  /* Chrome, Safari 3.1+ */
+        -moz-transform: rotate(450deg);  /* Firefox 3.5-15 */
+        -ms-transform: rotate(450deg);  /* IE 9 */
+        -o-transform: rotate(450deg);  /* Opera 10.50-12.00 */
+        transform: rotate(450deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+    }
+    .self-cartoon-portrait{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .self-cartoon-portrait img{
+        width: 30%;
+        margin-top: 0;
+    }
+    .header-section, .scroll-down-guide, .about-me-page, .upper-footer, .navigation, .mobile-about-me-text{
         display: none;
     }
     .footer{
@@ -157,14 +241,20 @@ li, a, button {
     }    
     .big-eye{
         font-family: 'Zilla Slab', serif;
-        font-size: 360px;
+        font-size: 300px;
         line-height: 280px;
     }
     .big-eye-text{
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+@media only screen and (min-width: 770px){
+    .big-eye{
+        font-size: 360px;
+    }
+    .big-eye-text{
         font-size: 24px;
-        text-align: left;
-        padding-top: 40px;
-        padding-left: 40px;
         line-height: 30px;
     }
 }
