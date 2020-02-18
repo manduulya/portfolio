@@ -149,50 +149,6 @@ li, a, button {
         -webkit-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
     }
-    .about-me-toggle-page{
-        text-align: initial;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
-        width: 60%;
-        line-height: 1.5em;
-    }
-    .about-me-wrapper{
-        padding: 3em;
-        border: 10px solid transparent;
-        border-image: 10 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em,
-                      #58a 0, #58a 3em, transparent 0, transparent 4em);
-    }
-    .about-me-wrapper p{
-        font-style: italic;
-    }
-    .js-close-button{
-        width: 28px;
-        height: 28px;
-        cursor: pointer;
-        font-size: 3em;
-        border-radius: 50%;
-        border: 2px solid black;
-        /* position: relative; */
-        padding: 8px;
-        
-    }
-    .js-close-button span{
-        width: 100%;
-        position: relative;
-        margin: 0 auto;
-        transition: 0.5s;
-    }
-    .rotate{
-        -webkit-transform: rotate(450deg);  /* Chrome, Safari 3.1+ */
-        -moz-transform: rotate(450deg);  /* Firefox 3.5-15 */
-        -ms-transform: rotate(450deg);  /* IE 9 */
-        -o-transform: rotate(450deg);  /* Opera 10.50-12.00 */
-        transform: rotate(450deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
-    }
     .self-cartoon-portrait{
         width: 80%;
         margin: 0 auto;

@@ -10,7 +10,6 @@ $('.hamburger-wrapper').mouseleave(function(){
 
 $(document).ready(function(){
     $('.hamburger-wrapper').click(function(){
-        // $('.toggle').toggleClass('active')
         $('.overlay').toggleClass('active')
         $('.menu').toggleClass('active')
     })
