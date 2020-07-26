@@ -1,81 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Philosopher%7CZilla+Slab:600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Philosopher%7CZilla+Slab:600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Ebo Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <nav class="nav-for-desktop">
-            <ul>
-                <li><a class="hover-menu" href="index.html">Home</a></li>
-                <li><a class="hover-menu" href="about-me.html"><span class="js-toggle-class">About me</span></a></li>
-                <li><a class="hover-menu" href="projects.html" target="_blank">Projects</a></li>
-                <li><a class="hover-menu" href="contact.html" target="_blank">Contact<span ></span></a></li>
-            </ul>
-        </nav>
-        <div class="div-to-center">
-            <div class="self-cartoon-portrait">
-                <img src="web-design/myself-cartoon.png" alt="">
-                <p class="big-eye hidden">I</p>
-                <p class="big-eye-text hidden">am a web developer<br>
-                    am recent graduate<br>
-                    like solving problems<br>
-                    like designing things<br>
-                    love helping others<br>
-                    enjoy music<br>
-                    enjoy photographing</p>
-            </div>
+      <section class="navigation">
+        <div class="navigation-div">
+          <section class="hamburger-wrapper">
+            <section class="hamburger-menu icon">
+              <span class="line top"></span>
+              <span class="line middle"></span>
+              <span class="line bottom"></span>
+            </section>
+          </section>
         </div>
-        <div class="header-section">
-            <h1>Hi! I'm Ebo!</h1>
-            <p>a web developer</p>
+      </section>
+      <section class="side-menu">
+        <div class="overlay"></div>
+        <div class="menu">
+          <ul>
+            <li><a class="hover-menu" href="index.html">Home</a></li>
+            <li><a class="hover-menu" href="about-me.html">About me</a></li>
+            <li>
+              <a class="hover-menu" href="projects.html">Projects</a>
+            </li>
+            <li>
+              <a class="hover-menu" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
+      </section>
+      <div class="div-to-center">
+        <div class="self-cartoon-portrait">
+          <img src="web-design/myself-cartoon.png" alt="" />
+          <p class="big-eye hidden">I</p>
+          <p class="big-eye-text hidden">
+            am a web developer<br />
+            am recent graduate<br />
+            like solving problems<br />
+            like designing things<br />
+            love helping others<br />
+            enjoy music<br />
+            enjoy photographing
+          </p>
+        </div>
+      </div>
+      <div class="header-section">
+        <h1>Hi! I'm Ebo!</h1>
+        <p>a web developer</p>
+      </div>
     </header>
     <main>
-        <section class="scroll-down-guide">
-            <p>Scroll down<br>for more about me</p>
-            <img src="web-design/scroll.png" alt="">
-        </section>
-        <section>
-            <div class="about-me-page">
-                <img src="web-design/logo.png" alt="">
-                <p>My name is Enkhmanlai Enkhbold</p>
-            </div>
-            <div class="mobile-about-me-text">
-                <p class="mobile-big-eye">I</p>
-                <p class="mobile-big-eye-text">am a web developer<br>
-                    am recent graduate<br>
-                    like solving problems<br>
-                    like designing things<br>
-                    love helping others<br>
-                    enjoy music<br>
-                    enjoy photographing</p>
-            </div>
-            <footer class="footer">
-                <div class="upper-footer">
-                    <div>
-                        <a href="index.html">Home</a>
-                        <a href="index.html">About me</a>
-                        <a href="Projects.html">Projects</a>
-                        <a href="contact.html">Contact me!</a>
-                    </div>     
-                </div>
-                <div class="lower-footer">
-                    <p>© Enkhmanlai Enkhbold</p>
-                </div>
-            </footer>
-        </section>
+      <section class="scroll-down-guide">
+        <p>Scroll down<br />for more about me</p>
+        <img src="web-design/scroll.png" alt="" />
+      </section>
+      <section>
+        <div class="about-me-page">
+          <img src="web-design/logo.png" alt="my logo" />
+          <p>My name is Enkhmanlai Enkhbold</p>
+        </div>
+        <div class="mobile-about-me-text">
+          <p class="mobile-big-eye">I</p>
+          <p class="mobile-big-eye-text">
+            am a web developer<br />
+            am recent graduate<br />
+            like solving problems<br />
+            like designing things<br />
+            love helping others<br />
+            enjoy music<br />
+            enjoy photographing
+          </p>
+        </div>
+        <footer class="footer">
+          <div class="lower-footer">
+            <p>© Enkhmanlai Enkhbold</p>
+          </div>
+        </footer>
+      </section>
     </main>
     <script
-        src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-</body>
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="projects.js"></script>
+  </body>
 </html>
