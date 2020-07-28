@@ -8,6 +8,7 @@
   width: 80%;
   text-align: center;
   z-index: -1;
+  margin-bottom: 120px;
 }
 .navigation-div {
   display: flex;
@@ -163,10 +164,12 @@
   text-align: start;
   margin-top: 35px;
 }
-.projects-buttons button {
-  width: 100px;
-  height: 37px;
-  border-radius: 5px;
+.projects-buttons a {
+  text-decoration: none;
+}
+.projects-buttons .button {
+  padding: 10px;
+  border-radius: 15px;
   background: #007feb;
   color: #fff;
   border: none;
@@ -178,7 +181,16 @@
   background: #fff;
   color: #007feb;
   border: 2px solid #007feb;
-  cursor: pointer;
+}
+.projects-buttons .button:hover {
+  background: #fff;
+  color: #007feb;
+  border: 2px solid #007feb;
+}
+.projects-buttons .bordered-button:hover {
+  background: #007feb;
+  color: #fff;
+  border: none;
 }
 .footer {
   position: fixed;
