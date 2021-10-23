@@ -1,48 +1,54 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   text-align: center;
   font-family: "Roboto", sans-serif;
-  background-color: rgba(8, 0, 38);
+  background-color: rgba(21, 24, 36);
 }
-
-.side-menu {
-  margin: 2em auto;
-  width: 80%;
-
+.navbar{
+  width: 60%;
+  margin: 80px auto;
 }
-.side-menu>ul{
-  width: 100px;
+.navbar>ul{
   float: right;
-
-
 }
-.side-menu>ul>li {
+.navbar>ul>li{
   display: inline-block;
+  margin-left: 50px;
 }
-.side-menu>ul>li>a {
-  text-decoration: none;
+.navbar>ul>li>a{
   color: #fff;
-  padding: 15px 20px;
+  text-decoration: none;
   font-size: 1.25rem;
-  
+  text-transform: uppercase;
+  position: relative;
 }
-.side-menu>ul>li>a::after {
-  bottom: 0;
-  content: "";
+.navbar>ul>li>a::after{
+  content: '';
   display: block;
-  height: 2px;
-  left: 50%;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  height: 3px;
+  position: absolute;
+  top: 35px;
+  background: #f25757;
+  transition: all 0.3s ease, left 0.3s 0s;
   width: 0;
+  left: 50%;
 }
-
-.side-menu>ul>li>a:hover::after{
-  width: 100px;
+.navbar>ul>li>a:hover::after{
+  width: 100%;
   left: 0;
+
+}
+.main-content {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .self-portrait {
   width: 200px;
