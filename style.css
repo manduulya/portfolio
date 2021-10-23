@@ -11,34 +11,39 @@ body {
 .side-menu {
   margin: 2em auto;
   width: 80%;
+
 }
-.menu {
+.side-menu>ul{
+  width: 100px;
   float: right;
+
+
 }
-.side-menu>.menu>ul>li {
+.side-menu>ul>li {
   display: inline-block;
 }
-.side-menu>.menu>ul>li>a {
+.side-menu>ul>li>a {
   text-decoration: none;
   color: #fff;
   padding: 15px 20px;
   font-size: 1.25rem;
   
 }
-.side-menu>.menu>ul>li>a::after {
-  background: none repeat scroll 0 0 transparent;
+.side-menu>ul>li>a::after {
   bottom: 0;
   content: "";
   display: block;
   height: 2px;
   left: 50%;
-
   background: #fff;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
 
-.side-menu>.menu>ul>li>a:hover::after{
+.side-menu>ul>li>a:hover::after{
   width: 100px;
   left: 0;
+}
+.self-portrait {
+  width: 200px;
 }
